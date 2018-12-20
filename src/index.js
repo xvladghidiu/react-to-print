@@ -44,7 +44,6 @@ class ReactToPrint extends React.Component {
     setTimeout(() => {
       target.contentWindow.focus();
       target.contentWindow.print();
-      this.removeWindow(target);
 
       if (onAfterPrint) {
         onAfterPrint();
